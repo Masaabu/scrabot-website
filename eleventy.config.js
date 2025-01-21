@@ -5,6 +5,7 @@ import fs from 'fs-extra';
 
 export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("src/components");
   eleventyConfig.addPlugin(EleventyI18nPlugin, {
     defaultLanguage: "ja",
     filters: {
