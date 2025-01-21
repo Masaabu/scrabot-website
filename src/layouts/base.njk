@@ -1,0 +1,26 @@
+---
+title: ScraBot
+---
+
+<!doctype html>
+<html lang="{{ page.lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ 'description' | i18n }}">
+    <link rel="stylesheet" href="/assets/styles/styles.css" onload="this.onload=null;">
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    {% include 'src/components/header.html' %}
+    <main>
+    {% if banner %}
+      <div class="banner">
+        <h1>{{ banner }}</h1>
+      </div>
+    {% endif %}
+    {{ content | safe }}
+    </main>
+    {% include 'src/components/footer.html' %}
+  </body>
+</html>

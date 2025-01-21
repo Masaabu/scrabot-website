@@ -1,0 +1,15 @@
+<header>
+  <a href="/{{ page.lang }}">ScraBot</a>
+  <select name="language" id="language">
+    <option value="en">English</option>
+    <option value="ja">日本語</option>
+  </select>
+</header>
+
+<script>
+  const select = document.getElementById('language');
+  select.value = "{{ page.lang }}";
+  select.addEventListener('change', function () {
+    window.location.href = `${window.location.pathname.replace("{{ page.lang }}", select.value)}`;
+  });
+</script>
