@@ -3,3 +3,4 @@
 /node_modules
 /src/pages/en
 .env*.local
+package-lock.json
