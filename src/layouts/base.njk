@@ -12,7 +12,7 @@ title: ScraBot
     <title>{{ title }}</title>
   </head>
   <body>
-    {% include 'src/components/header.html' %}
+    {% include "src/components/header.html" %}
     <main>
     {% if banner %}
       <div class="banner">
@@ -21,6 +21,6 @@ title: ScraBot
     {% endif %}
     {{ content | safe }}
     </main>
-    {% include 'src/components/footer.html' %}
+    {% include "src/components/footer.html" %}
   </body>
 </html>
