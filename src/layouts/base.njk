@@ -38,7 +38,7 @@ title: ScraBot
 </html>
 
 <script>
-const footer = document.querySelector("footer>.footer-content")
+  const footer = document.querySelector("footer>.footer-content")
   const contents = {
     Pages: [
       { name: "{{ 'commands' |i18n}}", link: "/{{ page.lang }}/commands", target: "_self" },
@@ -65,7 +65,7 @@ const footer = document.querySelector("footer>.footer-content")
     })
     footer.appendChild(dl)
   }
-  
+
   const select = document.getElementById('language');
   select.value = "{{ page.lang }}";
   select.addEventListener('change', function () {
