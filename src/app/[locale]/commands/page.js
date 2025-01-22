@@ -1,5 +1,5 @@
 import ReactMarkdown from 'react-markdown';
-import TranslationManager from "@/utils/TranslationManager.js"
+import TranslationManager from "@/lib/TranslationManager"
 import { getLocale } from "@/lib/getLocale";
 
 export default async function Home({ params }) {

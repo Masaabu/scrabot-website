@@ -20,12 +20,12 @@ export async function getLocale() {
         return locale;
     } else {
         console.log("x-url header is not found");
-        return null;
+        return "en";
     }
 }
 
 // リンクを変換する関数
-export async function serverLocalizeLink(link) {
+export async function serverLocalizeLink(link: string) {
     // 言語コードを取得
     const locale = await getLocale();
 

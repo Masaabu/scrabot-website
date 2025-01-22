@@ -1,7 +1,7 @@
 "use server"
 
 import { getLocale } from "@/lib/getLocale";
-import LocaleSwitch from "./ui/localeSwitch";
+// import LocaleSwitch from "./ui/localeSwitch";
 
 export default async function Header() {
   const locale = await getLocale()
@@ -11,7 +11,7 @@ export default async function Header() {
       <div className="flex">
         <a href={`/${locale}`} className="text-white no-underline text-[x-large] pl-0 md:pl-6">ScraBot</a>
         <div className="ml-auto">
-          <LocaleSwitch />
+          {/* <LocaleSwitch /> */}
         </div>
       </div>
     </header>
