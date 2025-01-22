@@ -1,7 +1,7 @@
 "use server"
 
 import { getLocale } from "@/lib/getLocale";
-import TranslationManager from "@/utils/TranslationManager.js"
+import TranslationManager from "@/lib/TranslationManager"
 
 const contents = {
   Pages: [

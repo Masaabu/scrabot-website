@@ -1,15 +1,11 @@
-import Image from "next/image";
-import TranslationManager from "@/utils/TranslationManager.js"
+import TranslationManager from "@/lib/TranslationManager"
 import { getLocale, serverLocalizeLink } from "@/lib/getLocale";
-import { localizeLink } from "@/hooks/useLocale";
-
-// serverLocalizeLink("<link>") これはサーバーサイドでローカライズリンクを生成する
 
 export default async function Home() {
   const locale = await getLocale()
   const tm = new TranslationManager(locale);
   const t = tm.t.bind(tm);
-// localizeLink("<link>") これローカライズリンク生成してくれる関数 
+
   const cards = [
     { img:"images/project_command.webp", button:<a className="text-xl rounded-lg bg-[#8866da77] px-4 py-1" href={await serverLocalizeLink("/commands")}>{t("commands")}</a> },
     { img:"images/user_command.webp"},
