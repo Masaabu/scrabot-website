@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 export function useLocale() {
     const pathname = usePathname(); // 現在のURLパスを取得
-    const [locale, setLocale] = useState(null);
+    const [locale, setLocale] = useState<string |null>(null);
 
     useEffect(() => {
         if (pathname) {
@@ -18,7 +18,7 @@ export function useLocale() {
     return locale;
 }
 
-export function localizeLink(link) {
+export function LocalizeLink(link: string) {
     // 言語コードを取得
     const locale = useLocale()
 
@@ -34,4 +34,18 @@ export function localizeLink(link) {
 
     // 言語コードがない場合、そのまま返す
     return link;
+}
+
+export function GetPathWithoutLocale() {
+    const pathname = usePathname(); // 現在のURLパスを取得
+
+    if (!pathname) return "";
+
+    // パスを分割して言語セグメントを削除
+    const segments = pathname.split("/").filter(Boolean);
+
+    // 言語コードを取り除いたパスを生成
+    const newPath = segments.slice(1).join("/");
+
+    return `/${newPath}`;
 }
