@@ -20,6 +20,6 @@ export default class TranslationManager {
   }
 
   t(key: string): string {
-    return translations[this.locale][key];
+    return translations[this.locale][key] ?? key;
   }
 }
