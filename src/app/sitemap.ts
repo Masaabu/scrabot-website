@@ -6,7 +6,7 @@ import { i18nConfig } from "@/locales/config";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const result: MetadataRoute.Sitemap = [];
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL
+  const siteUrl = process.env.NEXT_PUBLIC_IS_DEV ? "http://localhost:3000" : "https://scrabot.vercel.app"
 
   for (const lang of i18nConfig.locales) {
     const langConfig = i18nConfig.localeConfigs[lang];

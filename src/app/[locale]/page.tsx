@@ -1,5 +1,6 @@
 import TranslationManager from "@/lib/TranslationManager"
 import { getLocale, serverLocalizeLink } from "@/lib/getLocale";
+import LocaleSwitch from "@/components/ui/localeSwitch";
 
 export default async function Home() {
   const locale = await getLocale()
@@ -8,15 +9,15 @@ export default async function Home() {
 
   const cards = [
     { img:"images/project_command.webp", button:<a className="text-xl rounded-lg bg-[#8866da77] px-4 py-1" href={await serverLocalizeLink("/commands")}>{t("commands")}</a> },
-    { img:"images/user_command.webp"},
+    { img:"images/user_command.webp", button:<div className="flex justify-center"><LocaleSwitch/></div>},
     { img:"images/moya.webp"}
   ];
 
   return (
     <main>
       <div className="banner grid min-h-[70vh] text-center items-center text-[large]">
-        <div>
-          <h1 className="text-4xl text-white font-bold m-7">{t("description")}</h1>
+        <div className="fadeup">
+          <h1 className="text-4xl font-bold m-7">{t("description")}</h1>
           <a
             className="px-6 py-3 rounded-lg bg-[#515ce7] hover:bg-[#3e4aa6] text-2xl transition-[background-color]"
             href="https://discord.com/oauth2/authorize?client_id=1330992974556823662&permissions=280576&integration_type=0&scope=bot"
