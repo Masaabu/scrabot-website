@@ -6,11 +6,11 @@ import TranslationManager from "@/lib/TranslationManager"
 const contents: any = {
   Pages: [
     { label: "commands", link: "/commands", target: "_self" },
-    { label: "terms_of_use", link: "/terms_of_use", target: "_self" },
+    { label: "terms_of_service", link: "/terms_of_service", target: "_self" },
   ],
   Link: [
     { label: "discord", link: "https://discord.gg/HD85SkybXY" },
-    { label: "addDiscord", link: "https://discord.com/oauth2/authorize?client_id=1330992974556823662&permissions=280576&integration_type=0&scope=bot" }
+    { label: "add_to_discord", link: "/invite" }
   ]
 }
 

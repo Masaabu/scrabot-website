@@ -1,8 +1,9 @@
 {
   "description": "Simple Discord Bot to get Scratch information",
 
-  "addDiscord": "Add to Discord",
+  "add_to_discord": "Add to Discord",
   "discord": "Discord",
+  "send_feedback": "Send Feedback",
 
   "cardTitle_0": "Casually watch Scratch.",
   "cardDesc_0": "You can easily display information about Scratch projects, users, and studios using slash commands.",
@@ -14,6 +15,6 @@
   "commands": "Command List",
   "commands_desc": "Creating...\nHint: You can display the command help by using `/help`.",
 
-  "terms_of_use": "Terms of Use",
-  "terms_of_use_content": "##### This Terms of Service is a translation of the Japanese version.\n# Introduction\nThese Terms of Service (hereinafter referred to as \"the Terms\") set forth the conditions for using this DiscordBot (hereinafter referred to as \"the Bot\"). By using the Bot, you are deemed to have agreed to the following Terms.\n# Prohibited Actions\nThe following actions are prohibited when using the Bot:\n- Using the Bot for illegal purposes or disruptive actions (such as spam).\n- Using the Bot to engage in actions that violate Discord's Terms of Service.\n- Engaging in any other actions deemed inappropriate by the administrator.\n# Usage Restrictions\nIf it is determined that the use of the Bot is inappropriate, the administrator reserves the right to immediately restrict or prohibit the user's access to the Bot.\n# Disclaimer\n- The developer is not responsible for any damages arising from the use of the Bot.\n- The features and services of the Bot may be changed or discontinued without prior notice. The developer is not responsible for any damages arising from the suspension or modification of the Bot.\n# Changes to the Terms\nThese Terms may be changed without prior notice. Any changes will be announced on the Discord server."
+  "terms_of_service": "Terms of Service",
+  "terms_of_service_content": "##### This Terms of Service is a translation of the Japanese version.\n# Introduction\nThese Terms of Service (hereinafter referred to as \"the Terms\") set forth the conditions for using this DiscordBot (hereinafter referred to as \"the Bot\"). By using the Bot, you are deemed to have agreed to the following Terms.\n# Prohibited Actions\nThe following actions are prohibited when using the Bot:\n- Using the Bot for illegal purposes or disruptive actions (such as spam).\n- Using the Bot to engage in actions that violate Discord's Terms of Service.\n- Engaging in any other actions deemed inappropriate by the administrator.\n# Usage Restrictions\nIf it is determined that the use of the Bot is inappropriate, the administrator reserves the right to immediately restrict or prohibit the user's access to the Bot.\n# Disclaimer\n- The developer is not responsible for any damages arising from the use of the Bot.\n- The features and services of the Bot may be changed or discontinued without prior notice. The developer is not responsible for any damages arising from the suspension or modification of the Bot.\n# Changes to the Terms\nThese Terms may be changed without prior notice. Any changes will be announced on the Discord server."
 }

@@ -10,11 +10,11 @@ export default async function Home() {
   return (
     <main>
       <div className="banner grid max-h-[30vh] h-96 text-center items-center text-[large]">
-        <h1 className="text-4xl text-white font-bold m-7">{t("terms_of_use")}</h1>
+        <h1 className="text-4xl text-white font-bold m-7">{t("terms_of_service")}</h1>
       </div>
 
-      <div className="markdown max-w-6xl mx-auto">
-        <ReactMarkdown>{t("terms_of_use_content")}</ReactMarkdown>
+      <div className="markdown max-w-5xl mx-auto">
+        <ReactMarkdown>{t("terms_of_service_content")}</ReactMarkdown>
       </div>
     </main>
   );
